@@ -5,8 +5,8 @@
 ## Getting started
 1. Clone this repository and navigate into it
     ```sh
-    git clone https://github.com/LisaLamp/ui5tooling-customservermiddleware.git
-    cd ui5tooling-customservermiddleware
+    git clone https://github.com/exxcellent/ui5tooling-extensibility-showcase.git
+    cd ui5tooling-extensibility-showcase/demos/ui5tooling-customservermiddleware
     ```
 1. Install all dependencies
     ```sh
