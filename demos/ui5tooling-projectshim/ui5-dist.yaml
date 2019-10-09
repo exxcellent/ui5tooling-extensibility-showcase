@@ -1,0 +1,25 @@
+specVersion: "1.0"
+type: application
+metadata:
+  name: ui5tooling-projectshim
+resources:
+  configuration:
+    paths:
+      webapp: dist
+---
+specVersion: "1.0"
+type: project-shim
+metadata:
+  name:  thirdparty-shims
+kind: extension
+shims:
+  configurations:
+    moment:
+      specVersion: "1.0"
+      type: module
+      metadata:
+        name: moment
+      resources:
+        configuration:
+          paths:
+            /resources/thirdparty/moment/: ""

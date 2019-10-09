@@ -1,0 +1,23 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+		  xmlns="sap.m"
+		  controllerName="de.exxcellent.ui5tooling.customservermiddleware.controller.App" displayBlock="true">
+	<Shell>
+		<App>
+			<Page title="{i18n>TITLE}" backgroundDesign="Solid">
+				<subHeader>
+					<Toolbar>
+						<SearchField
+								id="searchAirportsItemsInput"
+								liveChange=".onSearch"
+								width="100%"/>
+					</Toolbar>
+				</subHeader>
+				<content>
+					<List id="airportList" class="sapUiSmallMarginTop" items="{odata>/Airports}">
+						<StandardListItem title="{odata>Name}" description="{odata>IcaoCode}"/>
+					</List>
+				</content>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>

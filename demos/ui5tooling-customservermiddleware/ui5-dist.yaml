@@ -1,0 +1,28 @@
+specVersion: "1.0"
+type: application
+metadata:
+  name: ui5tooling-customservermiddleware
+resources:
+  configuration:
+    paths:
+      webapp: dist
+server:
+  customMiddleware:
+    - name: simpleproxy
+      beforeMiddleware: serveResources
+      mountPath: "/"
+      configuration:
+        path: "/odata"
+        target: "https://services.odata.org/TripPinRESTierService/(S(id))/"
+        pathRewrite:
+          "^/odata": ""
+---
+specVersion: "1.0"
+kind: extension
+type: server-middleware
+metadata:
+  name: simpleproxy
+middleware:
+  path: lib/middleware/simpleproxy.js
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "ui5tooling-customservermiddleware",
+  "version": "0.2.0",
+  "description": "Extend ui5 tooling with custom server middleware",
+  "private": true,
+  "scripts": {
+    "serve": "ui5 serve -p 5001",
+    "lint": "eslint webapp",
+    "build": "rimraf dist && ui5 build self-contained --all",
+    "serve-dist": "ui5 serve -p 5001 --config ui5-dist.yaml"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^1.9.0",
+    "eslint": "^4.19.1",
+    "rimraf": "^2.6.2",
+    "http-proxy-middleware": "^0.19.1"
+  },
+  "dependencies": {
+    "@openui5/sap.m": "^1.70.0",
+    "@openui5/sap.ui.core": "^1.70.0",
+    "@openui5/themelib_sap_belize": "^1.70.0"
+  }
+}

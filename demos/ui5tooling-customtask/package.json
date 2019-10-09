@@ -1,0 +1,32 @@
+{
+  "name": "ui5tooling-customtask",
+  "version": "0.2.0",
+  "description": "Extend ui5 tooling with custom build task",
+  "private": true,
+  "scripts": {
+    "serve": "ui5 serve -p 5001",
+    "debug": "node --inspect node_modules/.bin/ui5 serve --port 1081",
+    "lint": "eslint webapp",
+    "build": "rimraf dist && ui5 build self-contained --all",
+    "serve-dist": "ui5 serve -p 5001 --config ui5-dist.yaml"
+  },
+  "dependencies": {
+    "@openui5/sap.m": "^1.70.0",
+    "@openui5/sap.ui.core": "^1.70.0",
+    "@openui5/themelib_sap_belize": "^1.70.0"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^1.9.0",
+    "eslint": "^4.19.1",
+    "rimraf": "^2.6.2",
+    "ui5-task-transpile": "^0.1.1"
+  },
+  "ui5": {
+    "dependencies": [
+      "@openui5/sap.m",
+      "@openui5/sap.ui.core",
+      "@openui5/themelib_sap_belize",
+      "ui5-task-transpile"
+    ]
+  }
+}

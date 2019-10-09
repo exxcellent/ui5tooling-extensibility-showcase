@@ -1,0 +1,12 @@
+{
+  "name": "ui5tooling-extensibility-showcase",
+  "version": "0.1.0",
+  "description": "A repository showcasing the UI5 tooling extensibility for UI5 application development.",
+  "private": true,
+  "author": "Lisa Lamparter",
+  "license": "THE DERIVED BEER-WARE LICENSE",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/petermuessig/ui5-ecosystem-showcase.git"
+  }
+}
